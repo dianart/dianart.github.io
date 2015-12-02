@@ -1,0 +1,283 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+var,
+b,
+i,
+ol,
+ul,
+li,
+table,
+footer,
+header,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+footer,
+header,
+section {
+    display: block
+}
+
+
+/* A font by Jos Buivenga (exljbris) -> www.exljbris.com */
+@font-face {
+    font-family: Delicious;
+    src: url('Delicious-Roman.otf');
+}
+
+@font-face {
+    font-family: Delicious;
+    font-weight: bold;
+    src: url('Delicious-Bold.otf');
+}
+
+* {
+    font-family: Delicious;
+    color: #53585F;
+}
+
+img {
+    max-width: 100%;
+    border-width: 0;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+}
+
+section {
+    min-height: 400px;
+}
+
+.wrapper {
+    width: auto;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+/*Home page*/
+
+.home {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/flowers.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.home-container {
+    top: 50%;
+    position: relative;
+    transform: translate(0, -50%);
+}
+
+h1,
+h2 {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 84px;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 1.3;
+    font-family: Delicious;
+}
+
+
+
+a {
+    color: white;
+}
+
+section {
+  padding: 40px 0;
+  clear: both;
+}
+
+
+/*Intro*/
+
+.quotes {
+    max-height: 50vh;
+}
+
+.intro-container p {
+    font-size: 48px;
+    text-align: center;
+  
+}
+
+.invert {
+    background-color: rgba(33, 35, 37, 1);
+}
+
+.invert p,
+.invert p b {
+    color: white;
+}
+
+
+/* About Section*/
+
+.about {
+    display: table;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.column-60, .column-40 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 30px;
+}
+
+.column-40 {
+  width: 40%;
+}
+
+.column-60 {
+  width: 55%;
+}
+
+.column-40 img {
+  max-width: 300px;
+  width: 100%;
+}
+
+.column-60 p {
+    text-align: left;
+    padding: 12px;
+}
+
+/*Symbol Section*/
+
+.symbols {
+    background-color: rgba(33, 35, 37, 1);
+    position: relative;
+    text-align: center;
+    height: 100%;
+    max-height: 360px;
+}
+
+.symbols-list {
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.symbols-list--item {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.symbols-list--item img {
+    max-width: 96px;
+}
+
+.symbols-list--item p {
+    color: white;
+}
+
+.icon {
+    width: 180px;
+    padding: 18px;
+}
+
+
+/*Project Section*/
+
+.projects {
+    position: relative;
+    text-align: center;
+    height: 100%;
+    max-height: 360px;
+}
+
+.middle-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.project-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+}
+
+.project-item:last-child {
+  margin-right: 0;
+}
+
+.project-item img {
+    max-width: 200px;
+    opacity: .5;
+    transition: all .3s;
+}
+
+.project-item img:hover {
+    opacity: 1;
+    transition: all .3s;
+}
+
+.popup {
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    padding: 12px;
+    margin-bottom: 30px;
+}
+
+.femtech {
+    display: none;
+}
+
+.bevisible {
+    display: none;
+}
+
+
+/*Footer Section*/
+
+footer {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/flowers.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    color: white; 
+    font-size: 12px;
+}
